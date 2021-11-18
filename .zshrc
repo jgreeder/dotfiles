@@ -127,6 +127,10 @@ alias ll='ls -l'
 alias lla='ls -la'
 alias sc='~/School/'
 
+function gmp {
+    g++ -Wall -std=c++17 -Xpreprocessor -fopenmp $1 -lomp
+}
+
 alias mongod='mongod --dbpath /Users/jreeder/RPG\ STUFF/DNDB/db'
 
 
@@ -149,25 +153,31 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-alias makettk="cd /Users/jreeder/ttk/ttk-0.9.7/build && make && sudo make install && cd -"
-alias paraview=/Users/jreeder/ttk/ParaView-v5.6.0/build/bin/paraview.app/Contents/MacOS/paraview
 alias py=/usr/bin/python3
-export CMAKE_PREFIX_PATH=:/usr/local/opt/qt/lib/cmake:/Applications/lib/cmake/
-export DYLD_LIBRARY_PATH=:/Applications/lib/
 export PATH=/Users/jreeder/opt/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/bin/
-export PV_PLUGIN_PATH=:/Applications/bin/plugins/
-export PYTHONPATH=:/Applications/lib/python3.8/site-packages/
 
-# export PATH="/usr/local/opt/python@3/libexec/bin/:$PATH"
-#export PATH="/usr/local/Cellar/python@3.8/3.8.7/bin/:$PATH"
-export PV_PLUGIN_PATH="/usr/local/lib/plugins"
-#export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+alias icloud="/Users/jreeder/Library/Mobile\ Documents/com~apple~CloudDocs"
 
-if command -v tmux &> /dev/null && \
-    [ -n "$PS1" ] && \
-    [[ ! "$TERM" =~ screen ]] && \
-    [[ ! "$TERM" =~ tmux ]] && \
-    [ -z "$TMUX" ]
-then
-  exec tmux
+if [[ `uname` == Darwin ]]; then
+    MAX_MEMORY_UNITS=KB
+else
+    MAX_MEMORY_UNITS=MB
 fi
+
+TIMEFMT='%J   %U  user %S system %P cpu %*E total'$'\n'\
+'avg shared (code):         %X KB'$'\n'\
+'avg unshared (data/stack): %D KB'$'\n'\
+'total (sum):               %K KB'$'\n'\
+'max memory:                %M '$MAX_MEMORY_UNITS''$'\n'\
+'page faults from disk:     %F'$'\n'\
+'other page faults:         %R'
+
+
+#if command -v tmux &> /dev/null && \
+#    [ -n "$PS1" ] && \
+#    [[ ! "$TERM" =~ screen ]] && \
+#    [[ ! "$TERM" =~ tmux ]] && \
+#    [ -z "$TMUX" ]
+#then
+#  exec tmux
+#fi
