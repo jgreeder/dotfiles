@@ -1,0 +1,159 @@
+window:
+  dynamic_title: true
+  dimensions:
+    columns: 0
+    lines: 0
+
+  position:
+    x: 50
+    y: 50
+
+  #startup_mode: SimpleFullscreen
+  #position:
+    #x: 0
+    #y: 0
+
+  padding:
+    x: 35
+    y: 35 
+  dynamic_padding: true
+  decorations: none
+
+scrolling:
+  history: 50000
+  multiplier: 3
+
+font:
+  normal:
+    family: Share Tech Mono #Fira Code
+    style: Regular
+
+  bold:
+    family: Share Tech Mono #Fira Code
+    style: Bold
+
+  italic:
+    family: Fira Code
+    style: Bold Italic
+
+  size: 13.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
+
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '0x24283b'
+      foreground: '0xa9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x9699a8'
+
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+colors: *tokyo-night-storm
+
+#  primary:
+#    background: '#2c2c2c'
+#    foreground: '#d6d6d6'
+#
+#    dim_foreground:    '#dbdbdb'
+#    bright_foreground: '#d9d9d9'
+#    dim_background:    '#202020'
+#    bright_background: '#3a3a3a'
+#
+#  cursor:
+#    text:   '#2c2c2c'
+#    cursor: '#d9d9d9'
+#
+#  normal:
+#    black:   '#1c1c1c'
+#    red:     '#bc5653'
+#    green:   '#909d63'
+#    yellow:  '#ebc17a'
+#    blue:    '#7eaac7'
+#    magenta: '#aa6292'
+#    cyan:    '#86d3ce'
+#    white:   '#cacaca'
+#
+#  bright:
+#    black:   '#636363'
+#    red:     '#bc5653'
+#    green:   '#909d63'
+#    yellow:  '#ebc17a'
+#    blue:    '#7eaac7'
+#    magenta: '#aa6292'
+#    cyan:    '#86d3ce'
+#    white:   '#f7f7f7'
+#
+#  dim:
+#    black:   '#232323'
+#    red:     '#74423f'
+#    green:   '#5e6547'
+#    yellow:  '#8b7653'
+#    blue:    '#556b79'
+#    magenta: '#6e4962'
+#    cyan:    '#5c8482'
+#    white:   '#828282'
+
+background_opacity: .97
+
