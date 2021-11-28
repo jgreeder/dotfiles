@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    
+
+- link:
+    ~/.zshrc: zshrc
+    ~/.oh-my-zsh/custom/aliases.zsh: aliases.zsh
+    ~/.tmux.conf: tmux.conf
+    ~/.config/alacritty/alacritty.yml: alacritty.yml
+    ~/.config/nvim/init.vim: init.vim
