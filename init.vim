@@ -67,7 +67,9 @@ noremap <leader>tn :tabnew<cr>
 "  Plugins
 """
 
-call plug#begin(stdpath('data') . '/plugged')
+let data_dir = has('nvim') ? stdpath('data') : '~/vim'
+
+call plug#begin(data_dir . '/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
