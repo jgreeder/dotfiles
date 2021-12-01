@@ -16,3 +16,6 @@ alias g++='g++ --std=c++17 -Wall -Wextra -pedantic -Wfatal-errors -Wshadow'
 
 # iCloud
 alias icloud='/Users/jreeder/Library/Mobile\ Documents/com~apple~CloudDocs'
+
+# Use Nvim not Vim
+alias vim='nvim'

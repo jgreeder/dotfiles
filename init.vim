@@ -74,6 +74,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'sainnhe/everforest'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
