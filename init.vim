@@ -76,8 +76,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'sheerun/vim-polyglot'
 Plug 'sainnhe/everforest'
-Plug 'ludovicchabant/vim-gutentags'
-
+if has('nvim')
+    Plug 'ludovicchabant/vim-gutentags'
+endif
 call plug#end()
 
 set background=dark
