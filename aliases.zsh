@@ -14,8 +14,10 @@ alias lar-'ls -lr'
 # Compile stuff
 alias g++='g++ --std=c++17 -Wall -Wextra -pedantic -Wfatal-errors -Wshadow'
 
-# iCloud
-alias icloud='/Users/jreeder/Library/Mobile\ Documents/com~apple~CloudDocs'
+if [[ `uname` == Darwin ]]; then
+    # iCloud
+    alias icloud='/Users/jreeder/Library/Mobile\ Documents/com~apple~CloudDocs'
 
-# Use Nvim not Vim
-alias vim='nvim'
+    # Use Nvim not Vim
+    alias vim='nvim'
+fi
