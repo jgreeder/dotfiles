@@ -7,7 +7,7 @@ if [[ `uname` == Darwin ]]; then
     export ZSH="/Users/jreeder/.oh-my-zsh"
 else
     export ZSH="/home/jreeder/.oh-my-zsh"
-
+fi
 ZSH_THEME="miloshadzic"
 
 # PUT RANDOM THEMES HERE
